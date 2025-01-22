@@ -1,7 +1,10 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://default:2JVBgN6fdZEi@ep-small-cell-a48v87ie-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL','postgresql://neondb_owner:GBYUhV93gPwC@ep-wispy-art-a4rjnsko.us-east-1.aws.neon.tech:5432/neondb?sslmode=require')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = os.urandom(24)  # or another method to set a secret key
+#    postgresql://default:2JVBgN6fdZEi@ep-small-cell-a48v87ie-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require
+#    postgres://neondb_owner:GBYUhV93gPwC@ep-wispy-art-a4rjnsko-pooler.us-east-1.aws.neon.tech:5432/neondb?sslmode=require
+#    postgresql://neondb_owner:GBYUhV93gPwC@ep-wispy-art-a4rjnsko.us-east-1.aws.neon.tech:5432/neondb?sslmode=require
 
